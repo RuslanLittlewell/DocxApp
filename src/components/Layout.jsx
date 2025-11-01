@@ -82,7 +82,7 @@ export default function Layout({ children }) {
             </Link>
 
             {/* Документы */}
-            <Link
+            {/* <Link
               to="/documents"
               className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${
                 location.pathname === '/documents'
@@ -92,7 +92,7 @@ export default function Layout({ children }) {
             >
               <FileBarChart className="h-5 w-5" />
               <span className="text-sm font-medium">Документы</span>
-            </Link>
+            </Link> */}
 
             <Separator className="my-2" />
 
@@ -118,7 +118,8 @@ export default function Layout({ children }) {
                     return (
                       <Link
                         key={index}
-                        to={item.path}
+                        // to={item.path}
+                        aria-disabled
                         className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${
                           isActive
                             ? 'bg-primary text-primary-foreground'
