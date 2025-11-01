@@ -1,0 +1,12 @@
+*md
+/node_modules
+/dist
+/.env
+.DS_Store
+/build
+/logs
+*.log
+/coverage
+/.vscode
+.idea/
+*.iml
